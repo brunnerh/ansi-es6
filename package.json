@@ -21,7 +21,7 @@
 	"scripts": {
 		"build:src": "tsc -p src/tsconfig.json",
 		"build:test": "tsc -p test/tsconfig.json",
-		"clean": "rm -r out && rm -r out-test",
+		"clean:build": "rm -r out out-test",
 		"install": "npm run 'build:src'",
 		"test": "npm run 'build:test' && node ./out-test/test/ansi.spec.js"
 	}
