@@ -1,0 +1,28 @@
+{
+	"name": "ansi-es6",
+	"description": "Module for modifying string with ANSI escape codes.",
+	"license": "MIT",
+	"keywords": ["ansi", "terminal", "colors"],
+	"authors": "brunnerh",
+	"version": "0.2.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brunnerh/ansi-es6"
+	},
+	"main": "out/ansi.js",
+	"types": "out/ansi.d.ts",
+	"dependencies": {
+		"typescript": "^3.2.2"
+	},
+	"devDependencies": {
+		"@types/tape": "^4.2.32",
+		"tape": "^4.9.1"
+	},
+	"scripts": {
+		"build:src": "tsc -p src/tsconfig.json",
+		"build:test": "tsc -p test/tsconfig.json",
+		"clean": "rm -r out && rm -r out-test",
+		"install": "npm run 'build:src'",
+		"test": "npm run 'build:test' && node ./out-test/test/ansi.spec.js"
+	}
+}

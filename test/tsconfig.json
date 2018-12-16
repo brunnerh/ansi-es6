@@ -1,0 +1,8 @@
+{
+	"extends": "../tsconfig.common.json",
+	"include": ["./**.ts"],
+	"compilerOptions": {
+		"target": "es5",
+		"outDir": "../out-test",
+	}
+}
