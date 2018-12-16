@@ -1,4 +1,3 @@
-//@ts-check
 import * as test from 'tape';
 import { code, modify, FgRgb, BgRgb, FgHsl, BgHsl } from '../src/ansi.js';
 
